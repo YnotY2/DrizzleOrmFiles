@@ -1,0 +1,19 @@
+-- This file is executed to grant all permisions to specified user for 
+-- interacting with db, and completing db operations. 
+-- Run this cli;    | psql -U your_db_user -d your_database_name -f your_script.psql  
+-- * This will apply perms for wanted usr on wanted db
+
+
+-- Grant usage and all privileges on the public schema
+GRANT USAGE ON SCHEMA public TO ynoty2_webpage_db_user;
+GRANT ALL PRIVILEGES ON SCHEMA public TO ynoty2_webpage_db_user;
+
+-- Grant privileges on tables
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO ynoty2_webpage_db_user;
+
+-- Grant privileges on sequences
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO ynoty2_webpage_db_user;
+
+-- Grant usage on future tables/sequences
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO ynoty2_webpage_db_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON SEQUENCES TO ynoty2_webpage_db_user;
