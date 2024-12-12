@@ -24,8 +24,8 @@
 ├── svelte.config.js
 ├── tailwind.config.ts
 ├── tsconfig.json
-|── vite.config.t
-└── drizzle.config.ts                   # Drizzle-Kit configuration for migrations
+├── vite.config.t
+|── drizzle.config.ts                   # Drizzle-Kit configuration for migrations
 ```
 
 ### Backend only Typescript Layout
@@ -49,7 +49,7 @@
 ├── .env                                 # Environment variables (e.g., DB credentials, JWT secrets)
 ├── package.json                        # Project metadata, dependencies, and scripts
 ├── tsconfig.json                       # TypeScript configuration
-└── drizzle.config.ts                   # Drizzle-Kit configuration for migrations
+|── drizzle.config.ts                   # Drizzle-Kit configuration for migrations
 
 ```
 
