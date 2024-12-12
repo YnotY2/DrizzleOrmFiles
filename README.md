@@ -26,7 +26,6 @@
 ├── tsconfig.json
 |── vite.config.t
 └── drizzle.config.ts                   # Drizzle-Kit configuration for migrations
-s
 ```
 
 ### Backend only Typescript Layout
