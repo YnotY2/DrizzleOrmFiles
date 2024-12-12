@@ -24,7 +24,9 @@
 ├── svelte.config.js
 ├── tailwind.config.ts
 ├── tsconfig.json
-└── vite.config.ts
+|── vite.config.t
+└── drizzle.config.ts                   # Drizzle-Kit configuration for migrations
+s
 ```
 
 ### Backend only Typescript Layout
